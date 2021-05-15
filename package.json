@@ -1,0 +1,33 @@
+{
+  "name": "nulladdict.com",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --write --ignore-unknown --plugin-search-dir=. .",
+    "format:this": "prettier --write --ignore-unknown --plugin-search-dir=."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "prettier-plugin-svelte": "^2.3.1",
+    "simple-git-hooks": "^2.5.1",
+    "svelte": "^3.42.1",
+    "svelte-check": "^2.2.4",
+    "svelte-preprocess": "^4.7.4",
+    "typescript": "^4.3.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "npm run format:this --",
+    "src/**/*.{d.ts,js,ts,svelte}": "npm run check"
+  }
+}
