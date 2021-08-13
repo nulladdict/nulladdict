@@ -8,9 +8,10 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    // Be fearless, hydrate the body
     target: "body",
     adapter: adapter({}),
+    hydrate: false,
+    router: false,
   },
 };
 
