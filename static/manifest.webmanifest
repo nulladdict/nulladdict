@@ -4,9 +4,17 @@
   "start_url": ".",
   "scope": "/",
   "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#000",
   "description": "Personal site made by @nulladdict (Roman Nevolin)",
   "icons": [
     { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    {
+      "src": "/maskable-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
   ]
 }
