@@ -40,6 +40,7 @@
   aside em {
     font-weight: 450;
     font-style: normal;
+    letter-spacing: -0.025em;
   }
 
   main {

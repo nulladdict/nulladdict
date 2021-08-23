@@ -9,16 +9,48 @@
 html {
   font-family: "Inter", sans-serif;
   text-rendering: optimizeSpeed;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 body {
   margin: 0;
 }
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+:focus-visible {
+  outline-offset: 0.125rem;
+  transition: outline-offset 50ms;
+}
+
+a {
+  color: currentColor;
+  text-decoration: underline;
+  letter-spacing: 0.025em;
+  text-underline-offset: 0.125em;
+  text-decoration-thickness: 0.125em;
+}
+
+:root {
+  --dark-purple: #3a0066;
+  --light-pink: #efd2ef;
+
+  --bg: #fff;
+  --fg: var(--dark-purple);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000;
+    --fg: var(--light-pink);
+  }
 }
