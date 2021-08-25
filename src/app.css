@@ -10,6 +10,7 @@ html {
   font-family: "Inter", sans-serif;
   text-rendering: optimizeSpeed;
   background-color: var(--bg);
+  background-image: paint(polka);
   color: var(--fg);
 }
 
