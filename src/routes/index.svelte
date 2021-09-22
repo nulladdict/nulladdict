@@ -1,17 +1,18 @@
 <article>
-  <header>Hi!</header>
-  <h1>I'm Roman.</h1>
+  <header>hi!</header>
+  <h1>i'm roman.</h1>
   <aside>
-    Also known as <em>@nulladdict</em> on the web
+    also known as <em>@nulladdict</em> on the web
   </aside>
   <main>
-    <p>I am a frontend developer, we(e)b enthusiast, and music consumer.</p>
-    <p>I also teach at university and occasionally contribute to open source.</p>
+    <p>frontend developer, we(e)b enthusiast, and music consumer.</p>
+    <p>i also teach at university and occasionally contribute to open source.</p>
     <p>
-      If you want to reach out, throw me an <a href="mailto:nulladdicted@gmail.com">e-mail</a>,
-      check my
-      <a href="https://github.com/nulladdict">github</a>, or hit me up on
-      <a href="https://twitter.com/nulladdict">twitter</a>.
+      if you want to reach out, throw me an <a class="plain" href="mailto:nulladdicted@gmail.com"
+        >e-mail</a
+      >, check my
+      <a class="plain" href="https://github.com/nulladdict">github</a>, or hit me up on
+      <a class="plain" href="https://twitter.com/nulladdict">twitter</a>.
     </p>
   </main>
 </article>
@@ -35,10 +36,11 @@
 
   aside {
     font-weight: 300;
+    font-style: italic;
   }
 
   aside em {
-    font-weight: 450;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: -0.025em;
   }
