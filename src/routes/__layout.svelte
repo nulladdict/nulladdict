@@ -29,9 +29,7 @@
     margin: 0;
   }
 
-  *,
-  ::after,
-  ::before {
+  * {
     box-sizing: border-box;
   }
 
@@ -39,20 +37,23 @@
     outline: none;
   }
 
-  a.plain {
-    color: currentColor;
+  a {
     text-decoration: underline;
+    text-decoration-color: var(--purplish);
+    text-decoration-thickness: 0.125rem;
+    color: currentColor;
     letter-spacing: 0.025em;
   }
 
-  a.plain:focus,
-  a.plain:hover {
-    text-decoration-thickness: 0.125em;
+  a:hover {
+    text-decoration-thickness: 0.1875rem;
   }
 
   :root {
     --pure-black: #000;
     --light-pink: #efd2ef;
+    --pinkish: #d78ad0;
+    --purplish: #8a64b0;
 
     --bg: var(--pure-black);
     --fg: var(--light-pink);

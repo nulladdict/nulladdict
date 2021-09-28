@@ -8,11 +8,10 @@
     <p>frontend developer, we(e)b enthusiast, and music consumer.</p>
     <p>i also teach at university and occasionally contribute to open source.</p>
     <p>
-      if you want to reach out, throw me an <a class="plain" href="mailto:nulladdicted@gmail.com"
-        >e-mail</a
-      >, check my
-      <a class="plain" href="https://github.com/nulladdict">github</a>, or hit me up on
-      <a class="plain" href="https://twitter.com/nulladdict">twitter</a>.
+      if you want to reach out, throw me an <a href="mailto:nulladdicted@gmail.com">e-mail</a>,
+      check my
+      <a href="https://github.com/nulladdict">github</a>, or hit me up on
+      <a href="https://twitter.com/nulladdict">twitter</a>.
     </p>
   </main>
 </article>

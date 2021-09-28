@@ -1,4 +1,7 @@
-.PHONY: install, update, dev, preview
+.PHONY: dev, install, update, preview
+
+dev:
+	npm run dev
 
 install:
 	npm install
@@ -6,9 +9,6 @@ install:
 
 update:
 	npx npm-check@latest -u
-
-dev:
-	npm run dev
 
 preview:
 	npm run build
