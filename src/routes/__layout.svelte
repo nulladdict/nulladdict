@@ -45,15 +45,17 @@
     letter-spacing: 0.025em;
   }
 
-  a:hover {
-    text-decoration-thickness: 0.1875rem;
+  a:hover,
+  a:focus {
+    text-decoration-thickness: 0.15rem;
+    color: var(--purplish);
   }
 
   :root {
     --pure-black: #000;
     --light-pink: #efd2ef;
     --pinkish: #d78ad0;
-    --purplish: #8a64b0;
+    --purplish: #b181e2;
 
     --bg: var(--pure-black);
     --fg: var(--light-pink);
