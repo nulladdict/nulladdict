@@ -1,12 +1,4 @@
-<script lang="ts">
-  import polkaWorkletUrl from "$lib/polka.js?url";
-  import wiresWorkletUrl from "$lib/wires.js?url";
-  const tag = "script";
-  const register = `<${tag} type="module">if("paintWorklet" in CSS){CSS.paintWorklet.addModule("${polkaWorkletUrl}");CSS.paintWorklet.addModule("${wiresWorkletUrl}")}</${tag}>`;
-</script>
-
 <slot />
-{@html register}
 
 <style global>
   @font-face {
