@@ -31,7 +31,7 @@
 
   a {
     text-decoration: underline;
-    text-decoration-color: var(--purplish);
+    text-decoration-color: var(--light-yellow);
     text-decoration-thickness: 0.125rem;
     color: currentColor;
     letter-spacing: 0.025em;
@@ -40,16 +40,15 @@
   a:hover,
   a:focus {
     text-decoration-thickness: 0.15rem;
-    color: var(--purplish);
+    color: var(--light-yellow);
   }
 
   :root {
     --pure-black: #000;
-    --light-pink: #efd2ef;
-    --pinkish: #d78ad0;
-    --purplish: #b181e2;
+    --light-purple: #d2c2eb;
+    --light-yellow: #ffdd99;
 
     --bg: var(--pure-black);
-    --fg: var(--light-pink);
+    --fg: var(--light-purple);
   }
 </style>
