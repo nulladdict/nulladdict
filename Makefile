@@ -16,6 +16,10 @@ preview:
 	npm run build
 	npm run preview
 
+.PHONY: check
+check:
+	npm run check
+
 .PHONY: fmt
 fmt:
 	npm run format
