@@ -19,6 +19,7 @@
   article {
     max-width: 40rem;
     margin: 8vh 2vw;
+    margin: max(8vh, 4rem) max(2vw, 0.25rem);
   }
 
   header {
