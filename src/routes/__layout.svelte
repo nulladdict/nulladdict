@@ -30,25 +30,24 @@
   }
 
   a {
-    text-decoration: underline;
-    text-decoration-color: var(--light-yellow);
-    text-decoration-thickness: 0.125rem;
-    color: currentColor;
+    color: var(--light-yellow);
     letter-spacing: 0.025em;
+    text-decoration-thickness: 0.125rem;
   }
 
-  a:hover,
-  a:focus {
-    text-decoration-thickness: 0.15rem;
-    color: var(--light-yellow);
+  a:focus,
+  a:hover {
+    color: var(--yellow);
   }
 
   :root {
-    --pure-black: #000;
-    --light-purple: #d2c2eb;
-    --light-yellow: #ffdd99;
+    --black: #000;
+    --purple: hsl(264, 100%, 65%);
+    --yellow: hsl(52, 100%, 65%);
+    --light-purple: hsl(264, 80%, 80%);
+    --light-yellow: hsl(52, 80%, 80%);
 
-    --bg: var(--pure-black);
+    --bg: var(--black);
     --fg: var(--light-purple);
   }
 </style>
