@@ -12,7 +12,7 @@
     "format:this": "prettier --write --ignore-unknown --plugin-search-dir=."
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "next",
+    "@sveltejs/adapter-cloudflare": "next",
     "@sveltejs/kit": "next",
     "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",

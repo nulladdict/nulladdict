@@ -11,9 +11,12 @@ update:
 dev:
 	npm run dev
 
-.PHONY: preview
-preview:
+.PHONY: build
+build:
 	npm run build
+
+.PHONY: preview
+preview: build
 	npm run preview
 
 .PHONY: check

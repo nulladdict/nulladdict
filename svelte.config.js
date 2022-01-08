@@ -1,5 +1,5 @@
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-static";
+import cloudflare from "@sveltejs/adapter-cloudflare";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +9,7 @@ const config = {
 
   kit: {
     target: "body",
-    adapter: adapter({}),
+    adapter: cloudflare({}),
     hydrate: false,
     router: false,
   },
