@@ -1,3 +1,6 @@
+<svelte:head>
+  <title>roman — @nulladdict</title>
+</svelte:head>
 <slot />
 
 <style global>
