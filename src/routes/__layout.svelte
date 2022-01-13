@@ -14,16 +14,14 @@
 
   html {
     font-family: "Inter", sans-serif;
+    font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03";
     text-rendering: optimizeSpeed;
     background-color: var(--bg);
     color: var(--fg);
   }
 
-  body {
-    margin: 0;
-  }
-
   * {
+    margin: 0;
     box-sizing: border-box;
   }
 
