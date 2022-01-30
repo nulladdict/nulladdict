@@ -20,7 +20,9 @@
     color: var(--fg);
   }
 
-  * {
+  *,
+  *::before,
+  *::after {
     margin: 0;
     box-sizing: border-box;
   }
