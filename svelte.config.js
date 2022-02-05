@@ -8,7 +8,6 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    target: "body",
     adapter: adapter({}),
     browser: {
       hydrate: false,
