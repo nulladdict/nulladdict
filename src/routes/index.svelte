@@ -16,6 +16,38 @@
 </article>
 
 <style>
+  :root::after {
+    content: "";
+    position: fixed;
+    right: -150vw;
+    bottom: -40vh;
+    left: -150vw;
+    width: 400vw;
+    height: 80vh;
+    opacity: 0.75;
+    background-image: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 14px,
+        var(--pink) 16px,
+        var(--pink) 16px,
+        var(--pink) 16px,
+        transparent 18px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        transparent,
+        transparent 14px,
+        var(--pink) 16px,
+        var(--pink) 16px,
+        var(--pink) 16px,
+        transparent 18px,
+        transparent 32px
+      );
+    transform: perspective(1vh) rotateX(4deg);
+  }
+
   article {
     max-width: 40rem;
     margin: 8vh 2vw;

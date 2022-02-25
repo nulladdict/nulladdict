@@ -1,12 +1,12 @@
 {
-  "name": "@nulladdict (Roman)",
+  "name": "@nulladdict (roman)",
   "short_name": "nulladdict.com",
   "start_url": ".",
   "scope": "/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#000",
-  "description": "Personal site made by @nulladdict (Roman Nevolin)",
+  "description": "personal site made by @nulladdict (roman nevolin)",
   "icons": [
     { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
     { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" },
