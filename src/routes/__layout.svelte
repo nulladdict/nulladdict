@@ -32,14 +32,15 @@
   }
 
   a {
-    color: var(--light-yellow);
+    color: var(--light-mint);
     letter-spacing: 0.025em;
     text-decoration-thickness: 0.125rem;
   }
 
   a:focus,
   a:hover {
-    color: var(--yellow);
+    color: var(--mint);
+    text-decoration-style: dashed;
   }
 
   :root {
@@ -47,8 +48,10 @@
     --purple: hsl(264, 100%, 65%);
     --pink: hsl(330, 100%, 65%);
     --yellow: hsl(52, 100%, 65%);
+    --mint: hsl(164, 100%, 65%);
     --light-purple: hsl(264, 80%, 80%);
     --light-yellow: hsl(52, 80%, 80%);
+    --light-mint: hsl(164, 80%, 80%);
 
     --bg: var(--black);
     --fg: var(--light-purple);
