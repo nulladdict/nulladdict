@@ -53,8 +53,7 @@
 
   article {
     max-width: 40rem;
-    margin: 8vh 2vw;
-    margin: max(8vh, 4rem) max(2vw, 0.25rem);
+    padding: 8vh 2vw;
   }
 
   header {
@@ -77,6 +76,7 @@
     font-weight: 500;
     font-style: normal;
     letter-spacing: -0.025em;
+    color: var(--light-pink);
   }
 
   main {

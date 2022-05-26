@@ -13,7 +13,7 @@ build:
   npm run build
 
 preview: build
-  npm run preview
+  npx wrangler pages dev .svelte-kit/cloudflare
 
 check:
   npm run check

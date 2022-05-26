@@ -20,6 +20,11 @@
     color: var(--fg);
   }
 
+  html,
+  body {
+    height: 100%;
+  }
+
   *,
   *::before,
   *::after {
@@ -50,6 +55,7 @@
     --yellow: hsl(52, 100%, 65%);
     --mint: hsl(164, 100%, 65%);
     --light-purple: hsl(264, 80%, 80%);
+    --light-pink: hsl(330, 80%, 80%);
     --light-yellow: hsl(52, 80%, 80%);
     --light-mint: hsl(164, 80%, 80%);
 
