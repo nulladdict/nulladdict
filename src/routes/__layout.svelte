@@ -13,7 +13,7 @@
   }
 
   html {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
     font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03";
     text-rendering: optimizeSpeed;
     background-color: var(--bg);
