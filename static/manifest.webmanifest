@@ -8,7 +8,17 @@
   "theme_color": "#000",
   "description": "personal site made by @nulladdict (roman nevolin)",
   "icons": [
-    { "src": "/nll-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
-    { "src": "/nll-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+    {
+      "src": "/nll-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/nll-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
   ]
 }

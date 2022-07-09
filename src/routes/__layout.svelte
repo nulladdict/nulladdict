@@ -42,10 +42,10 @@
     text-decoration-thickness: 0.125rem;
   }
 
-  a:focus,
+  a:focus-visible,
   a:hover {
     color: var(--mint);
-    text-decoration-style: dashed;
+    text-decoration: none;
   }
 
   :root {
