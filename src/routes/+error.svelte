@@ -1,14 +1,6 @@
-<script context="module" lang="ts">
-  import type { Load } from "@sveltejs/kit";
-  export const load: Load = ({ error, status }) => ({
-    props: { error, status },
-  });
-</script>
-
 <script lang="ts">
-  export let status: number | null;
-  export let error: Error | null;
-  const httpCode = status || 500;
+  import { page } from "$app/stores";
+  $: httpCode = $page.status || 500;
 </script>
 
 <svelte:head>
@@ -17,9 +9,9 @@
 
 <article>
   <h1>{httpCode}</h1>
-  {#if error}
+  {#if $page.error}
     <aside>
-      {error.message}
+      {$page.error.message}
     </aside>
   {/if}
 </article>
