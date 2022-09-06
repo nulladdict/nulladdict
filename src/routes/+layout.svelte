@@ -9,11 +9,18 @@
     font-style: oblique 0deg 10deg;
     font-weight: 100 900;
     font-display: swap;
-    src: url("/Inter.var.v3.19.woff2") format("woff2");
+    src: url("../Inter.var.v3.19.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Arial-to-Inter";
+    size-adjust: 107%;
+    ascent-override: 91%;
+    src: local("Arial");
   }
 
   html {
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif;
     font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03";
     text-rendering: optimizeSpeed;
     background-color: var(--bg);
