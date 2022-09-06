@@ -8,12 +8,14 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write --ignore-unknown --plugin-search-dir=. .",
-    "format:this": "prettier --write --ignore-unknown --plugin-search-dir=."
+    "format:this": "prettier --write --ignore-unknown --plugin-search-dir=.",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "next",
     "@sveltejs/kit": "next",
     "lint-staged": "^13.0.3",
+    "patch-package": "^6.4.7",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "simple-git-hooks": "^2.8.0",
