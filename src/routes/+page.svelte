@@ -20,7 +20,7 @@
     want to hire me? <a
       href="https://docs.google.com/document/d/1NLnoy3xBnbqhvsBtGGYP3d7JllKwhDJMDowuvUhlV4U/export?format=pdf"
       target="_blank"
-      rel="noopener noreferer">here's my CV</a
+      rel="noopener noreferrer">here's my CV</a
     >
   </footer>
 </article>
