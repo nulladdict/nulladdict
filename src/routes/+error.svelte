@@ -33,20 +33,8 @@
 
   @supports (-webkit-text-fill-color: transparent) and (-webkit-background-clip: text) {
     h1 {
-      background: linear-gradient(
-        64deg,
-        var(--light-purple),
-        var(--light-pink),
-        var(--light-yellow),
-        var(--light-mint)
-      );
-      background: radial-gradient(
-        ellipse at bottom left,
-        var(--light-purple),
-        var(--light-pink),
-        var(--light-yellow),
-        var(--light-mint)
-      );
+      background: linear-gradient(32deg, var(--mint), var(--purple), var(--pink));
+      background: radial-gradient(ellipse at bottom left, var(--mint), var(--purple), var(--pink));
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-clip: text;

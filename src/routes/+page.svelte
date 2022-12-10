@@ -51,7 +51,7 @@
     font-weight: 500;
     font-style: normal;
     letter-spacing: -0.025em;
-    color: var(--light-pink);
+    color: var(--pink);
   }
 
   main {

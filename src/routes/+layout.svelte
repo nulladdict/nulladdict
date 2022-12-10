@@ -44,29 +44,30 @@
   }
 
   a {
-    color: var(--light-mint);
+    color: var(--mint);
     letter-spacing: 0.025em;
-    text-decoration-thickness: 0.125rem;
+    padding: 0.0625rem 0.125rem;
+    border-bottom: 0.0625rem solid var(--mint);
+    text-decoration: none;
   }
 
   a:focus-visible,
   a:hover {
-    color: var(--mint);
-    text-decoration: none;
+    outline: none;
+    color: var(--bg);
+    background-color: var(--mint);
+    border-bottom: 0.0625rem solid var(--mint);
+    border-radius: 0.125rem;
   }
 
   :root {
     --black: #000;
-    --purple: hsl(264, 100%, 65%);
-    --pink: hsl(330, 100%, 65%);
-    --yellow: hsl(52, 100%, 65%);
-    --mint: hsl(164, 100%, 65%);
-    --light-purple: hsl(264, 80%, 80%);
-    --light-pink: hsl(330, 80%, 80%);
-    --light-yellow: hsl(52, 80%, 80%);
-    --light-mint: hsl(164, 80%, 80%);
+    --dark-purple: oklch(50% 0.25 300);
+    --purple: oklch(80% 0.125 300);
+    --pink: oklch(80% 0.125 350);
+    --mint: oklch(80% 0.125 170);
 
     --bg: var(--black);
-    --fg: var(--light-purple);
+    --fg: var(--purple);
   }
 </style>
