@@ -2,8 +2,7 @@
   <meta name="description" content="personal site made by @nulladdict (roman nevolin)" />
 </svelte:head>
 <article>
-  <header>hi!</header>
-  <h1>i'm roman nevolin.</h1>
+  <h1>hi! i'm roman nevolin.</h1>
   <aside>
     also known as <em>@nulladdict</em> on the web
   </aside>
@@ -29,11 +28,6 @@
   article {
     max-width: 40rem;
     padding: 8vh 2vw;
-  }
-
-  header {
-    font-size: 2rem;
-    font-weight: 500;
   }
 
   h1 {
