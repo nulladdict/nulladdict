@@ -7,43 +7,11 @@
   <title>{httpCode} — @nulladdict</title>
 </svelte:head>
 
-<article>
-  <h1>{httpCode}</h1>
+<article class="flex h-full flex-col items-center justify-center gap-2">
+  <h1 class="text-8xl">{httpCode}</h1>
   {#if $page.error}
-    <aside>
+    <aside class="text-lg">
       {$page.error.message}
     </aside>
   {/if}
 </article>
-
-<style>
-  article {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  h1 {
-    margin-top: 25vh;
-    font-size: 32vmin;
-    font-weight: 200;
-  }
-
-  @supports (-webkit-text-fill-color: transparent) and (-webkit-background-clip: text) {
-    h1 {
-      background: linear-gradient(32deg, var(--mint), var(--purple), var(--pink));
-      background: radial-gradient(ellipse at bottom left, var(--mint), var(--purple), var(--pink));
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-  }
-
-  aside {
-    font-size: 1.25rem;
-    font-weight: 300;
-    max-width: 40rem;
-  }
-</style>
