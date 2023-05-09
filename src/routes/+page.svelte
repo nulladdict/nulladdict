@@ -13,19 +13,19 @@
     <p>
       if you want to reach out check my
       <a
-        class="text-teal-300 underline decoration-teal-600 underline-offset-2 hover:no-underline focus-visible:no-underline"
+        class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
         href="https://github.com/nulladdict">github</a
       >
       or hit me up on
       <a
-        class="text-teal-300 underline decoration-teal-600 underline-offset-2 hover:no-underline focus-visible:no-underline"
+        class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
         href="https://twitter.com/nulladdict">twitter</a
       >.
     </p>
   </main>
   <footer>
     want to hire me? <a
-      class="text-teal-300 underline decoration-teal-600 underline-offset-2 hover:no-underline focus-visible:no-underline"
+      class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
       href="https://docs.google.com/document/d/1NLnoy3xBnbqhvsBtGGYP3d7JllKwhDJMDowuvUhlV4U/export?format=pdf"
       target="_blank"
       rel="noopener noreferrer">here's my CV</a
