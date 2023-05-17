@@ -2,9 +2,6 @@
   import "../app.css";
 </script>
 
-<svelte:head>
-  <title>roman — @nulladdict</title>
-</svelte:head>
 <slot />
 
 <style global lang="postcss">

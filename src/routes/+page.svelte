@@ -1,34 +1,31 @@
+<script lang="ts">
+  import Link from "$lib/link/Link.svelte";
+  import Nav from "$lib/nav/Nav.svelte";
+</script>
+
 <svelte:head>
+  <title>roman — @nulladdict</title>
   <meta name="description" content="personal site made by @nulladdict (roman nevolin)" />
 </svelte:head>
 
-<article class="flex flex-col gap-3 px-4 py-8 md:px-8 md:py-16">
-  <h1 class="text-2xl font-medium">hi! i'm roman nevolin.</h1>
+<Nav />
+<article class="flex flex-col gap-4 px-4 md:px-8">
+  <h1 class="text-3xl font-medium">hi! i'm roman nevolin.</h1>
   <aside class="font-light italic">
     also known as <em class="font-normal not-italic text-pink-300">@nulladdict</em> on the web
   </aside>
-  <main class="flex flex-col gap-2">
+  <main class="flex flex-col gap-1">
     <p>frontend developer, we(e)b enthusiast, and music consumer.</p>
     <p>i also teach at university and occasionally contribute to open source.</p>
-    <p>
-      if you want to reach out check my
-      <a
-        class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
-        href="https://github.com/nulladdict">github</a
-      >
-      or hit me up on
-      <a
-        class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
-        href="https://twitter.com/nulladdict">twitter</a
-      >.
-    </p>
+    <!-- <p>
+      looks like
+      <Link href="./notes">i write some stuff now</Link>, check it out
+    </p> -->
   </main>
   <footer>
-    want to hire me? <a
-      class="text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline"
-      href="https://docs.google.com/document/d/1NLnoy3xBnbqhvsBtGGYP3d7JllKwhDJMDowuvUhlV4U/export?format=pdf"
-      target="_blank"
-      rel="noopener noreferrer">here's my CV</a
-    >
+    if you want to reach out check my
+    <Link href="https://github.com/nulladdict">github</Link>
+    or hit me up on
+    <Link href="https://twitter.com/nulladdict">twitter</Link>.
   </footer>
 </article>
