@@ -6,7 +6,7 @@
 <a
   {...$$props}
   href={$$props.href}
-  class={`text-teal-300 underline decoration-from-font hover:no-underline focus-visible:no-underline ${
+  class={`text-pink-100 underline decoration-from-font hover:no-underline focus-visible:no-underline ${
     $$props.class || ""
   }`}
 >

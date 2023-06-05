@@ -12,7 +12,7 @@
 <article class="flex flex-col gap-4 px-4 md:px-8">
   <h1 class="text-3xl font-medium">hi! i'm roman nevolin.</h1>
   <aside class="font-light italic">
-    also known as <em class="font-normal not-italic text-pink-300">@nulladdict</em> on the web
+    also known as <em class="font-normal not-italic text-pink-100">@nulladdict</em> on the web
   </aside>
   <main class="flex flex-col gap-1">
     <p>frontend developer, we(e)b enthusiast, and music consumer.</p>
