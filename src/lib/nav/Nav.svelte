@@ -1,6 +1,7 @@
 <script lang="ts">
   import Link from "$lib/link/Link.svelte";
   export let cd: string = "";
+  export let nvim: string = "";
 </script>
 
 <div class="flex max-w-xl flex-col gap-1 px-4 pb-6 pt-8 md:px-8 md:pb-10 md:pt-12">
@@ -21,5 +22,5 @@
   {#if cd}
     <div aria-hidden="true" class="font-semibold">λ ~/ cd {cd}</div>
   {/if}
-  <div aria-hidden="true" class="font-semibold">λ ~/ nvim ./+page.svelte</div>
+  <div aria-hidden="true" class="font-semibold">λ ~/ nvim {nvim || "./+page.svelte"}</div>
 </div>
