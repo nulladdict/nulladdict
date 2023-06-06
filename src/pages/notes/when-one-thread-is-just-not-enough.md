@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Note.astro
 title: when one thread is just not enough
 date: 2023-06-05
 ---

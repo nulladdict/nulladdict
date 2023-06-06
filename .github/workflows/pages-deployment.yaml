@@ -22,5 +22,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: nulladdict
-          directory: .svelte-kit/cloudflare
+          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

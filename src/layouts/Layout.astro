@@ -1,0 +1,73 @@
+---
+interface Props {
+  title: string;
+  description?: string | undefined;
+}
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/nll.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/nll-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000" />
+    <meta name="color-scheme" content="dark" />
+    {description ? <meta name="description" content={description} /> : null}
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @font-face {
+    font-family: "Inter";
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/Inter.var.v3.19.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Arial-to-Inter";
+    size-adjust: 107%;
+    ascent-override: 91%;
+    src: local("Arial");
+  }
+
+  html {
+    font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
+    font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03" !important;
+    text-rendering: optimizeSpeed;
+    background-color: #000;
+    color: theme(colors.violet.300);
+    line-height: normal !important;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  @layer base {
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
+    }
+  }
+</style>

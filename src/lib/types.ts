@@ -1,11 +1,5 @@
-import type { ComponentType, SvelteComponentTyped } from "svelte";
-
-export interface FrontMatter {
+export interface Frontmatter {
   title: string;
   date: string;
-}
-
-export interface MarkdownImport {
-  metadata: FrontMatter;
-  default: ComponentType<SvelteComponentTyped>;
+  description?: string | undefined;
 }

@@ -1,5 +1,4 @@
-.svelte-kit/**
-.mf/**
-static/**
-build/**
+.astro/**
+dist/**
+public/**
 node_modules/**

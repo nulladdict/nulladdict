@@ -2,7 +2,7 @@ import typography from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -12,7 +12,7 @@ export default {
             "--tw-prose-invert-body": theme("colors.purple[300]"),
             "--tw-prose-invert-headings": theme("colors.pink[300]"),
             "--tw-prose-invert-lead": theme("colors.purple[300]"),
-            "--tw-prose-invert-links": theme("colors.pink[400]"),
+            "--tw-prose-invert-links": theme("colors.pink[200]"),
             "--tw-prose-invert-bold": theme("colors.pink[300]"),
             "--tw-prose-invert-counters": theme("colors.purple[400]"),
             "--tw-prose-invert-bullets": theme("colors.purple[600]"),

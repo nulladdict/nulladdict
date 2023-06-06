@@ -1,0 +1,32 @@
+---
+import Link from "../../components/Link.astro";
+import Nav from "../../components/Nav.astro";
+import Layout from "../../layouts/Layout.astro";
+import { formatDate } from "../../lib/formatDate";
+import type { Frontmatter } from "../../lib/types";
+const posts = await Astro.glob<Frontmatter>("./*.md");
+---
+
+<Layout
+  title="notes — @nulladdict"
+  description="notes collection written by @nulladdict on different frontend or web related topics"
+>
+  <Nav nvim="~/notes/index.astro" />
+  <article class="flex flex-col gap-4 px-4 md:px-8">
+    <h1>my notes on different frontend or web related topics</h1>
+    <main>
+      <ol reversed start={posts.length} class="flex list-inside list-decimal flex-col gap-1">
+        {
+          posts.map((post) => (
+            <li>
+              <h2 class="inline">
+                <Link href={post.url}>{post.frontmatter.title}</Link>
+              </h2>
+              ({formatDate(post.frontmatter.date)})
+            </li>
+          ))
+        }
+      </ol>
+    </main>
+  </article>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<Layout title="roman — @nulladdict" description="personal site made by @nulladdict (roman nevolin)">
+  <Nav nvim="~/index.astro" />
+  <article class="flex flex-col gap-4 px-4 md:px-8">
+    <h1 class="text-3xl font-medium">hi! i'm roman nevolin.</h1>
+    <aside class="font-light italic">
+      also known as <em class="font-normal not-italic text-pink-200">@nulladdict</em> on the web
+    </aside>
+    <main class="flex flex-col gap-1">
+      <p>frontend developer, we(e)b enthusiast, and music consumer.</p>
+      <p>i also teach at university and occasionally contribute to open source.</p>
+      <p>
+        looks like
+        <Link href="./notes">i write some stuff now</Link>, check it out
+      </p>
+    </main>
+    <footer>
+      if you want to reach out check my
+      <Link href="https://github.com/nulladdict">github</Link>
+      or hit me up on
+      <Link href="https://twitter.com/nulladdict">twitter</Link>.
+    </footer>
+  </article>
+</Layout>
