@@ -18,7 +18,7 @@ const { title, description } = Astro.props;
     <meta name="theme-color" content="#000" />
     <meta name="color-scheme" content="dark" />
     {description ? <meta name="description" content={description} /> : null}
-    <title>{title}</title>
+    <title>{title} — @nulladdict</title>
     <script>
       if (import.meta.env.MODE === "production" && "serviceWorker" in navigator) {
         navigator.serviceWorker.register("/service-worker.js");
