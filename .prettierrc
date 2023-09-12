@@ -1,5 +1,0 @@
-{
-  "printWidth": 100,
-  "useTabs": false,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"]
-}

@@ -4,26 +4,27 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro check && astro build",
     "preview": "astro build && astro preview",
     "astro": "astro",
     "upgrade": "npx npm-check@latest -u && npm update",
-    "fmt": "prettier --write --ignore-unknown .",
+    "fmt": "prettier --write --ignore-unknown './**/*'",
     "fmt:this": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^3.1.3",
-    "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.6.4",
-    "autoprefixer": "^10.4.14",
-    "lint-staged": "^13.2.2",
-    "postcss": "^8.4.24",
-    "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.10.0",
-    "prettier-plugin-tailwindcss": "^0.3.0",
-    "simple-git-hooks": "^2.8.1",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.1.3"
+    "@astrojs/check": "^0.2.0",
+    "@astrojs/tailwind": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "astro": "^3.0.12",
+    "autoprefixer": "^10.4.15",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "simple-git-hooks": "^2.9.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

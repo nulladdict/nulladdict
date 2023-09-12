@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+
 interface Props {
   title: string;
   description?: string | undefined;
@@ -6,8 +8,8 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en" class="dark" transition:animate="initial">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -24,55 +26,56 @@ const { title, description } = Astro.props;
         navigator.serviceWorker.register("/service-worker.js");
       }
     </script>
+    <ViewTransitions fallback="none" />
   </head>
   <body>
     <slot />
+    <style is:global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      @font-face {
+        font-family: "Inter";
+        font-style: oblique 0deg 10deg;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/Inter.var.v3.19.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Arial-to-Inter";
+        size-adjust: 107%;
+        ascent-override: 91%;
+        src: local("Arial");
+      }
+
+      html {
+        font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
+        font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03" !important;
+        text-rendering: optimizeSpeed;
+        background-color: #000;
+        color: theme(colors.violet.300);
+        line-height: normal !important;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      :focus:not(:focus-visible) {
+        outline: none;
+      }
+
+      @layer base {
+        code,
+        kbd,
+        samp,
+        pre {
+          font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
+        }
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-
-  @font-face {
-    font-family: "Inter";
-    font-style: oblique 0deg 10deg;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url("/Inter.var.v3.19.woff2") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Arial-to-Inter";
-    size-adjust: 107%;
-    ascent-override: 91%;
-    src: local("Arial");
-  }
-
-  html {
-    font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
-    font-feature-settings: "calt", "case", "salt", "ss01", "ss02", "ss03" !important;
-    text-rendering: optimizeSpeed;
-    background-color: #000;
-    color: theme(colors.violet.300);
-    line-height: normal !important;
-  }
-
-  html,
-  body {
-    height: 100%;
-  }
-
-  :focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  @layer base {
-    code,
-    kbd,
-    samp,
-    pre {
-      font-family: "Inter", "Arial-to-Inter", system-ui, sans-serif !important;
-    }
-  }
-</style>
