@@ -13,7 +13,7 @@ const filename = url ? url.split("/").pop() : "note";
 <Layout title={frontmatter.title} description={frontmatter.description}>
   <Nav nvim={`~/notes/${filename}.md`} />
   <article
-    class="prose prose-custom break-words px-4 dark:prose-invert lg:prose-lg prose-headings:lowercase md:px-8"
+    class="prose prose-custom break-words px-4 lg:prose-lg dark:prose-invert prose-headings:lowercase md:px-8"
   >
     <aside class="text-violet-200">
       <time datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
