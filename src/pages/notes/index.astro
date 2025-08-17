@@ -5,8 +5,11 @@ import Nav from "../../components/Nav.astro";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "../../lib/formatDate";
 import type { Frontmatter } from "../../lib/types";
+
 const posts = Object.values(
-  import.meta.glob<AstroInstance & { frontmatter: Frontmatter }>("./*.md", { eager: true }),
+  import.meta.glob<AstroInstance & { frontmatter: Frontmatter }>("./*.md", {
+    eager: true,
+  }),
 );
 ---
 

@@ -8,28 +8,23 @@
     "preview": "astro build && astro preview",
     "astro": "astro",
     "upgrade": "npx npm-check@latest -u && npm update",
-    "fmt": "prettier --write --ignore-unknown './**/*'",
-    "fmt:this": "prettier --write --ignore-unknown"
+    "lint": "biome check --write"
   },
-  "dependencies": {
+  "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.5",
+    "@biomejs/biome": "^2.2.0",
     "@tailwindcss/typography": "^0.5.16",
-    "astro": "^5.1.8",
-    "autoprefixer": "^10.4.20",
-    "lint-staged": "^15.4.1",
-    "postcss": "^8.5.1",
-    "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.10",
-    "simple-git-hooks": "^2.11.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.2",
+    "lint-staged": "^16.1.5",
+    "simple-git-hooks": "^2.13.1",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "npm run fmt:this --"
+    "*": "biome check --write --no-errors-on-unmatched"
   }
 }

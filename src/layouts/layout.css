@@ -1,0 +1,20 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: tailwind */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
+
+html {
+  text-rendering: optimizeSpeed;
+  background-color: var(--color-black);
+  color: var(--color-violet-300);
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

@@ -2,9 +2,10 @@
 import type { MarkdownLayoutProps } from "astro";
 import Link from "../components/Link.astro";
 import Nav from "../components/Nav.astro";
-import Layout from "./Layout.astro";
 import { formatDate } from "../lib/formatDate";
 import type { Frontmatter } from "../lib/types";
+import Layout from "./Layout.astro";
+
 type Props = MarkdownLayoutProps<Frontmatter>;
 const { frontmatter, url } = Astro.props;
 const filename = url ? url.split("/").pop() : "note";
