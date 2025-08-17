@@ -1,16 +1,12 @@
 ---
-import type { AstroInstance } from "astro";
+import { getCollection } from "astro:content";
 import Link from "../../components/Link.astro";
 import Nav from "../../components/Nav.astro";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "../../lib/formatDate";
-import type { Frontmatter } from "../../lib/types";
 
-const posts = Object.values(
-  import.meta.glob<AstroInstance & { frontmatter: Frontmatter }>("./*.md", {
-    eager: true,
-  }),
-);
+const notes = await getCollection("notes");
+notes.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout
@@ -21,14 +17,14 @@ const posts = Object.values(
   <article class="flex flex-col gap-4 px-4 md:px-8">
     <h1>my notes on different frontend or web related topics</h1>
     <main>
-      <ol reversed start={posts.length} class="flex list-inside list-decimal flex-col gap-1">
+      <ol reversed start={notes.length} class="flex list-inside list-decimal flex-col gap-1">
         {
-          posts.map((post) => (
+          notes.map((note) => (
             <li>
               <h2 class="inline">
-                <Link href={post.url}>{post.frontmatter.title}</Link>
+                <Link href={`/notes/${note.id}/`}>{note.data.title}</Link>
               </h2>
-              ({formatDate(post.frontmatter.date)})
+              ({formatDate(note.data.date)})
             </li>
           ))
         }

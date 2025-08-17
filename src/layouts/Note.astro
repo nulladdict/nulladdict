@@ -1,23 +1,26 @@
 ---
+import { getEntry } from "astro:content";
 import type { MarkdownLayoutProps } from "astro";
 import Link from "../components/Link.astro";
 import Nav from "../components/Nav.astro";
 import { formatDate } from "../lib/formatDate";
-import type { Frontmatter } from "../lib/types";
 import Layout from "./Layout.astro";
 
-type Props = MarkdownLayoutProps<Frontmatter>;
-const { frontmatter, url } = Astro.props;
-const filename = url ? url.split("/").pop() : "note";
+type Props = MarkdownLayoutProps<never>;
+const { url } = Astro.props;
+const id = url?.split("/").pop();
+if (!id) throw new Error("Invalid URL");
+const entry = await getEntry("notes", id);
+if (!entry) throw new Error(`Note with id "${id}" not found`);
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
-  <Nav nvim={`~/notes/${filename}.md`} />
+<Layout title={entry.data.title} description={entry.data.description}>
+  <Nav nvim={`~/notes/${id}.md`} />
   <article
     class="prose prose-custom mx-auto break-words px-4 dark:prose-invert lg:prose-lg prose-headings:lowercase md:px-8"
   >
     <aside class="text-violet-200">
-      <time datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
+      <time datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date)}</time>
     </aside>
     <slot />
   </article>
