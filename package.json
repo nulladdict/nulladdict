@@ -11,15 +11,15 @@
     "lint": "biome check --write"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@biomejs/biome": "^2.2.2",
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.12",
-    "astro": "^5.13.5",
-    "lint-staged": "^16.1.6",
+    "@astrojs/check": "^0.9.5",
+    "@biomejs/biome": "^2.2.6",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.15",
+    "astro": "^5.14.7",
+    "lint-staged": "^16.2.5",
     "simple-git-hooks": "^2.13.1",
-    "tailwindcss": "^4.1.12",
-    "typescript": "^5.9.2"
+    "tailwindcss": "^4.1.15",
+    "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
