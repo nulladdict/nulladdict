@@ -4,18 +4,18 @@
   "start_url": ".",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#000",
-  "description": "personal site of @nulladdict (roman nevolin)",
+  "background_color": "#000",
+  "theme_color": "#fff",
+  "description": "@nulladdict (roman nevolin)",
   "icons": [
     {
-      "src": "/nll-192.png",
+      "src": "/roman-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "/nll-512.png",
+      "src": "/roman-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"

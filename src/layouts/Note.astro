@@ -17,14 +17,14 @@ if (!entry) throw new Error(`Note with id "${id}" not found`);
 <Layout title={entry.data.title} description={entry.data.description}>
   <Nav />
   <article
-    class="prose prose-custom mx-auto break-words px-4 dark:prose-invert lg:prose-lg prose-headings:lowercase md:px-8"
+    class="prose prose-neutral mx-auto wrap-break-word px-4 dark:prose-invert lg:prose-lg prose-headings:lowercase md:px-8"
   >
-    <aside class="text-violet-200">
+    <aside>
       <time datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date)}</time>
     </aside>
     <slot />
   </article>
-  <footer class="px-4 py-6 text-violet-200 md:px-8 md:py-10">
-    like it? hate it? tweet me at <Link href="https://twitter.com/nulladdict">@nulladdict</Link>
+  <footer class="px-4 py-6 md:px-8 md:py-10">
+    like it? hate it? tweet me at <Link class="font-sans" href="https://twitter.com/nulladdict">@nulladdict</Link>
   </footer>
 </Layout>

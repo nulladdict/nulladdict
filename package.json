@@ -1,31 +1,36 @@
 {
   "name": "nulladdict.com",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro build && astro preview",
     "astro": "astro",
     "upgrade": "npx npm-check@latest -u && npm update",
-    "lint": "biome check --write"
+    "fmt": "oxfmt --write",
+    "lint": "oxlint --fix"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
-    "@biomejs/biome": "^2.3.8",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.16.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.17.1",
     "lint-staged": "^16.2.7",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
     "simple-git-hooks": "^2.13.1",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "wrangler": "^4.52.1"
+    "wrangler": "^4.63.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "biome check --write --no-errors-on-unmatched"
+    "*": [
+      "npx oxlint --fix",
+      "npx oxfmt --write --no-error-on-unmatched-pattern"
+    ]
   }
 }

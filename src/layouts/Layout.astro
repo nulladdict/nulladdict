@@ -9,17 +9,16 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en" class="dark" transition:animate="initial">
+<!DOCTYPE html>
+<html lang="en" class="scheme-light dark:scheme-dark" transition:animate="initial">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/nll.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/nll-192.png" />
+    <link rel="icon" href="/roman.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/roman-apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color" content="#000" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#fff" />
     {description ? <meta name="description" content={description} /> : null}
     <title>{title} — @nulladdict</title>
     <script>
@@ -29,7 +28,7 @@ const { title, description } = Astro.props;
     </script>
     <ClientRouter fallback="none" />
   </head>
-  <body>
+  <body class="font-serif">
     <slot />
   </body>
 </html>
