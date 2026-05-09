@@ -1,9 +1,3 @@
----
-layout: ../../layouts/Note.astro
-title: when one event loop is not enough
-date: 2023-06-16
----
-
 # When one event loop is not enough
 
 A tale of JavaScript, full-text search, multithreading, and concurrency.
