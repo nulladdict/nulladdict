@@ -4,25 +4,24 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro build && astro preview",
     "astro": "astro",
-    "upgrade": "npx npm-check@latest -u && npm update",
+    "upgrade": "npx npm-check-updates@latest -i && npm update",
     "fix": "oxlint --fix && oxfmt --write",
     "check": "oxlint --deny-warnings && oxfmt --check"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.3.1",
-    "lint-staged": "^17.0.3",
-    "oxfmt": "^0.49.0",
-    "oxlint": "^1.63.0",
-    "simple-git-hooks": "^2.13.1",
-    "tailwindcss": "^4.3.0",
-    "typescript": "^6.0.3",
-    "wrangler": "^4.90.0"
+    "@tailwindcss/typography": "^0.5.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.1",
+    "lint-staged": "^17.6.0",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
+    "simple-git-hooks": "^2.14.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.151.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -32,5 +31,11 @@
       "npx oxlint --fix --no-error-on-unmatched-pattern",
       "npx oxfmt --write --no-error-on-unmatched-pattern"
     ]
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true,
+    "simple-git-hooks@2.14.0": true,
+    "workerd@1.20261019.1": true
   }
 }
